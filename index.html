@@ -17,22 +17,22 @@
 
     <main>
       <div class="crab-balance">
-        <img src="crab-icon.png" alt="CrabCoin" class="coin-icon">
+        <img src="images/crab-icon.png" alt="CrabCoin" class="coin-icon">
         <span id="balance-amount">0</span> 
       </div>
 
       <div class="energy"> 
-        <img src="energy-icon.png" alt="Energy" class="energy-icon">
+        <img src="images/energy-icon.png" alt="Energy" class="energy-icon">
         <span id="energy-amount">100</span>
       </div>
 
       <div class="crab-level">
-        <img src="crab-trophy.png" alt="Crab Level" class="level-icon">
-        <a href="#" onclick="openLeagueModal()" id="level-name" aria-label="Открыть информацию о лиге">Bronze</a> 
+        <img src="images/crab-trophy.png" alt="Crab Level" class="level-icon">
+        <span id="level-name">Bronze</span> 
       </div>
 
       <div class="crab-image"> 
-        <img src="crab-main.png" alt="Crab" id="crab-main" aria-label="Кликнуть краба"> 
+        <img src="images/crab-main.png" alt="Crab" id="crab-main" aria-label="Кликнуть краба"> 
       </div>
 
       <div class="progress-bar" aria-label="Прогресс"> 
@@ -41,15 +41,15 @@
 
       <div class="bottom-nav">
         <button class="nav-button" aria-label="Друзья">
-          <img src="crab-friends.png" alt="Frens">
+          <img src="images/crab-friends.png" alt="Frens">
           <span>Frens</span>
         </button>
         <button class="nav-button" aria-label="Заработать">
-          <img src="crab-earn.png" alt="Earn">
+          <img src="images/crab-earn.png" alt="Earn">
           <span>Earn</span>
         </button>
         <button class="nav-button" aria-label="Ускорения">
-          <img src="crab-boost.png" alt="Boosts">
+          <img src="images/crab-boost.png" alt="Boosts">
           <span>Boosts</span>
         </button>
       </div>
@@ -58,22 +58,23 @@
 
   <div id="league-modal" class="modal">
     <div class="modal-content">
-      <span class="close-modal" aria-label="Закрыть">&times;</span>
+      <span class="close-modal" onclick="closeLeagueModal()" aria-label="Закрыть">&times;</span> 
+      <h2>League</h2>
       <div class="league-navigation">
-        <button class="nav-arrow" id="prev-league" aria-label="Предыдущая лига">&lt;</button>
-        <button class="nav-arrow" id="next-league" aria-label="Следующая лига">&gt;</button>
+        <button class="nav-arrow" id="prev-league" aria-label="Предыдущая лига" onclick="previousLeague()">&lt;</button> 
+        <button class="nav-arrow" id="next-league" aria-label="Следующая лига" onclick="nextLeague()">&gt;</button> 
       </div>
       <div class="league-info">
         <div class="league-crab-image">
           <img src="images/crab-league.png" alt="League Crab"> 
         </div>
-        <div class="league-name" id="modal-league-name">Bronze</div>
+        <div class="league-name" id="modal-league-name">Bronze</div> 
         <div class="league-progress">
           <div class="progress-bar">
-            <div class="progress-bar-fill"></div>
+            <div class="progress-bar-fill"></div> 
           </div>
           <div class="progress-text">
-            <span id="current-coins">0</span> / <span id="required-coins">100K</span>
+            <span id="current-coins">0</span> / <span id="required-coins">100K</span> 
           </div>
         </div>
       </div>
