@@ -4,53 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CrabCoin</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script> 
 </head>
 <body>
   <div class="container">
     <header>
-      <button id="close-button">✕</button>
+      <button id="close-button">&times;</button> 
       <div class="title">CrabCoin</div>
-      <button id="join-squad-button">Join squad ></button>
+      <a id="join-squad-button">Join squad ></a> 
     </header>
 
     <main>
       <div class="crab-balance">
-        <img src="images/crab-icon.png" alt="CrabCoin" class="coin-icon">
-        <span id="balance-amount">0</span> 
+        <img src="images/coin.png" alt="coin" class="coin-icon"> 5 
       </div>
 
-      <div class="energy"> 
-        <img src="images/energy-icon.png" alt="Energy" class="energy-icon">
-        <span id="energy-amount">100</span>
+      <div class="energy">
+        <img src="images/energy.png" alt="energy" class="energy-icon"> 95
       </div>
 
       <div class="crab-level">
-        <img src="images/crab-trophy.png" alt="Crab Level" class="level-icon">
-        <a href="#" onclick="openLeagueModal()" id="level-name">Bronze</a> 
+        <img src="images/level.png" alt="level" class="level-icon"> Bronze
       </div>
 
-      <div class="crab-image"> 
-        <img src="images/crab-main.png" alt="Crab" id="crab-main"> 
+      <div class="crab-image">
+        <img src="images/crab.png" alt="Crab"> 
       </div>
 
-      <div class="progress-bar"> 
+      <div class="progress-bar">
         <div class="progress-bar-fill"></div>
       </div>
 
       <div class="bottom-nav">
         <button class="nav-button">
-          <img src="images/crab-friends.png" alt="Frens">
-          <span>Frens</span>
+          <img src="images/friends.png" alt="Friends">
+          Frens
         </button>
         <button class="nav-button">
-          <img src="images/crab-earn.png" alt="Earn">
-          <span>Earn</span>
+          <img src="images/earn.png" alt="Earn">
+          Earn
         </button>
         <button class="nav-button">
-          <img src="images/crab-boost.png" alt="Boosts">
-          <span>Boosts</span>
+          <img src="images/boosts.png" alt="Boosts">
+          Boosts
         </button>
       </div>
     </main>
@@ -58,28 +55,27 @@
 
   <div id="league-modal" class="modal">
     <div class="modal-content">
-      <span class="close-modal">&times;</span>
+      <span class="close-modal">&times;</span> 
+      <h2>League</h2>
       <div class="league-navigation">
-        <button class="nav-arrow" id="prev-league">&lt;</button>
-        <button class="nav-arrow" id="next-league">&gt;</button>
+        <button class="nav-arrow">&lt;</button>
+        <button class="nav-arrow">&gt;</button>
       </div>
       <div class="league-info">
         <div class="league-crab-image">
-          <img src="images/crab-league.png" alt="League Crab"> 
+          <img src="images/crab.png" alt="Crab">
         </div>
-        <div class="league-name" id="modal-league-name">Bronze</div>
+        <div class="league-name">Bronze League</div>
         <div class="league-progress">
           <div class="progress-bar">
             <div class="progress-bar-fill"></div>
           </div>
-          <div class="progress-text">
-            <span id="current-coins">0</span> / <span id="required-coins">100K</span>
-          </div>
+          <div class="progress-text">100/500 XP</div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> 
 </body>
 </html>
