@@ -19,10 +19,10 @@ let currentLeagueIndex = 0;
 let isRecovering = false; // Флаг для отслеживания восстановления
 
 const leagues = [
-  { name: 'Bronze', image: 'images/crab-league-bronze.png', requiredCoins: 100000 },
-  { name: 'Silver', image: 'images/crab-league-silver.png', requiredCoins: 1000000 },
-  { name: 'Gold', image: 'images/crab-league-gold.png', requiredCoins: 10000000 },
-  { name: 'Diamond', image: 'images/crab-league-diamond.png', requiredCoins: 100000000 }
+  { name: 'Bronze', image: 'crab-league-bronze.png', requiredCoins: 100000 },
+  { name: 'Silver', image: 'crab-league-silver.png', requiredCoins: 1000000 },
+  { name: 'Gold', image: 'crab-league-gold.png', requiredCoins: 10000000 },
+  { name: 'Diamond', image: 'crab-league-diamond.png', requiredCoins: 100000000 }
 ];
 
 crabMain.addEventListener('click', () => {
